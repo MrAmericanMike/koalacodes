@@ -1,0 +1,33 @@
+{
+	"name": "koalacodes",
+	"version": "0.0.1",
+	"description": "Random Codes Generator",
+	"main": "src/main.js",
+	"scripts": {
+		"start": "src/main.js"
+	},
+	"files": [
+		"src/main.js",
+		"package.json",
+		"README.md"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MrAmericanMike/koalacodes.git"
+	},
+	"keywords": [
+		"random",
+		"codes",
+		"generator",
+		"code",
+		"readable",
+		"vowels",
+		"consonants"
+	],
+	"author": "MrAmericanMike",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/MrAmericanMike/koalacodes/issues"
+	},
+	"homepage": "https://github.com/MrAmericanMike/koalacodes#readme"
+}
