@@ -1,6 +1,6 @@
 {
 	"name": "koalacodes",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Random Codes Generator",
 	"main": "src/main.js",
 	"scripts": {
