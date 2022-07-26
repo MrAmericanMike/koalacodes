@@ -2,19 +2,17 @@
 	"name": "koalacodes",
 	"version": "0.0.2",
 	"description": "Random Codes Generator",
-	"main": "src/main.js",
+	"main": "lib/main.js",
+	"types": "lib/main.d.ts",
+	"author": "MrAmericanMike",
 	"scripts": {
-		"start": "src/main.js"
+		"tsc": "tsc"
 	},
 	"files": [
-		"src/main.js",
+		"lib/**/*",
 		"package.json",
 		"README.md"
 	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/MrAmericanMike/koalacodes.git"
-	},
 	"keywords": [
 		"random",
 		"codes",
@@ -24,10 +22,17 @@
 		"vowels",
 		"consonants"
 	],
-	"author": "MrAmericanMike",
 	"license": "MIT",
+	"homepage": "https://github.com/MrAmericanMike/koalacodes#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MrAmericanMike/koalacodes.git"
+	},
 	"bugs": {
 		"url": "https://github.com/MrAmericanMike/koalacodes/issues"
 	},
-	"homepage": "https://github.com/MrAmericanMike/koalacodes#readme"
+	"devDependencies": {
+		"@types/node": "^18.6.1",
+		"typescript": "^4.7.4"
+	}
 }
