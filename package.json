@@ -1,6 +1,6 @@
 {
 	"name": "koalacodes",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Random Codes Generator",
 	"main": "lib/main.js",
 	"types": "lib/main.d.ts",
