@@ -1,41 +1,32 @@
-interface defaults {
+interface Defaults {
 	vowels: Array<string>;
 	consonants: Array<string>;
 	defaultLength: number;
 }
 
-interface options {
+interface Options {
 	vowels?: Array<string>;
 	consonants?: Array<string>;
 	defaultLength?: number;
 }
 
-const DEFAULTS: defaults = {
+const DEFAULTS: Defaults = {
 	vowels: ["A", "E", "I", "O", "U"],
 	consonants: ["B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Y", "Z"],
 	defaultLength: 8
-}
+};
 
 class KoalaCodes {
-	/**
-	 * @type {Array<string>}
-	 */
-	#VOWELS;
-	/**
-	 * @type {Array<string>}
-	 */
-	#CONSONANTS;
-	/**
-	 * @type {number}
-	 */
-	#DEFAULT_LENGTH;
+	#VOWELS: Array<string>;
+	#CONSONANTS: Array<string>;
+	#DEFAULT_LENGTH: number;
 
 	/**
-	 * 
-	 * @param {options} options Different options for constructing the code generator
+	 *
+	 * @param {Options} options Different options for constructing the code generator
 	 */
-	constructor(options?: options) {
-		this.#VOWELS = options?.vowels ? options.vowels : DEFAULTS.vowels;
+	constructor(options?: Options) {
+		this.#VOWELS = options?.vowels ?? DEFAULTS.vowels;
 		this.#CONSONANTS = options?.consonants ?? DEFAULTS.consonants;
 		this.#DEFAULT_LENGTH = options?.defaultLength ?? DEFAULTS.defaultLength;
 	}
@@ -46,15 +37,13 @@ class KoalaCodes {
 		for (let index = 0; index < LENGTH; index++) {
 			if (index % 2 == 0) {
 				code += this.#CONSONANTS[Math.floor(Math.random() * this.#CONSONANTS.length)];
-			}
-			else {
+			} else {
 				code += this.#VOWELS[Math.floor(Math.random() * this.#VOWELS.length)];
 			}
 		}
 		return code;
 	}
-
-};
+}
 
 export = KoalaCodes;
 
