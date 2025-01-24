@@ -19,7 +19,7 @@ const DEFAULTS: Defaults = {
 	firstLetter: "consonant"
 };
 
-class KoalaCodes {
+export class KoalaCodes {
 	#VOWELS: Array<string>;
 	#CONSONANTS: Array<string>;
 	#DEFAULT_LENGTH: number;
@@ -56,6 +56,4 @@ class KoalaCodes {
 		return code;
 	}
 }
-
-export = KoalaCodes;
 
